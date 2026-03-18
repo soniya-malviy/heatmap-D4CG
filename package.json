@@ -1,0 +1,26 @@
+{
+  "name": "d4cg-data-density-heatmap-prototype",
+  "version": "0.1.0",
+  "description": "GSoC 2026 prototype — Data Density Heatmap for D4CG PCDC GraphQL endpoint",
+  "author": "Soniya Malviya <soniya.04malviya@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node src/queryEngine.ts",
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.0",
+    "graphql": "^16.8.0",
+    "d3": "^7.8.0"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}

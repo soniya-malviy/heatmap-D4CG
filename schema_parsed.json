@@ -1,0 +1,733 @@
+[
+  {
+    "node_id": "acknowledgement",
+    "title": "Acknowledgement",
+    "category": "administrative",
+    "total_fields": 2,
+    "required_fields": [
+      "projects"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "acknowledgee",
+      "projects"
+    ]
+  },
+  {
+    "node_id": "case",
+    "title": "Case",
+    "category": "administrative",
+    "total_fields": 4,
+    "required_fields": [
+      "experiments"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "consent_codes",
+      "primary_site",
+      "disease_type",
+      "experiments"
+    ]
+  },
+  {
+    "node_id": "core_metadata_collection",
+    "title": "Core Metadata Collection",
+    "category": "administrative",
+    "total_fields": 16,
+    "required_fields": [
+      "projects"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "contributor",
+      "coverage",
+      "creator",
+      "date",
+      "description",
+      "format",
+      "language",
+      "publisher",
+      "relation",
+      "rights",
+      "source",
+      "subject",
+      "title",
+      "data_type",
+      "projects"
+    ]
+  },
+  {
+    "node_id": "experiment",
+    "title": "Experiment",
+    "category": "administrative",
+    "total_fields": 14,
+    "required_fields": [
+      "projects"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "number_experimental_group",
+      "number_samples_per_experimental_group",
+      "experimental_description",
+      "experimental_intent",
+      "associated_experiment",
+      "type_of_sample",
+      "type_of_specimen",
+      "marker_panel_description",
+      "somatic_mutations_identified",
+      "indels_identified",
+      "copy_numbers_identified",
+      "type_of_data",
+      "data_description",
+      "projects"
+    ]
+  },
+  {
+    "node_id": "keyword",
+    "title": "Keyword",
+    "category": "administrative",
+    "total_fields": 2,
+    "required_fields": [
+      "projects"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "keyword_name",
+      "projects"
+    ]
+  },
+  {
+    "node_id": "publication",
+    "title": "Publication",
+    "category": "administrative",
+    "total_fields": 3,
+    "required_fields": [
+      "projects"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "pmid",
+      "doi",
+      "projects"
+    ]
+  },
+  {
+    "node_id": "aliquot",
+    "title": "Aliquot",
+    "category": "biospecimen",
+    "total_fields": 8,
+    "required_fields": [
+      "samples"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "aliquot_quantity",
+      "aliquot_volume",
+      "amount",
+      "analyte_type",
+      "analyte_type_id",
+      "concentration",
+      "source_center",
+      "samples"
+    ]
+  },
+  {
+    "node_id": "read_group",
+    "title": "Read Group",
+    "category": "biospecimen",
+    "total_fields": 34,
+    "required_fields": [
+      "aliquots"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "experiment_name",
+      "sequencing_center",
+      "sequencing_date",
+      "platform",
+      "instrument_model",
+      "library_strategy",
+      "RIN",
+      "flow_cell_barcode",
+      "includes_spike_ins",
+      "spike_ins_fasta",
+      "spike_ins_concentration",
+      "library_selection",
+      "library_preparation_kit_name",
+      "library_preparation_kit_vendor",
+      "library_preparation_kit_catalog_number",
+      "library_preparation_kit_version",
+      "library_name",
+      "target_capture_kit_name",
+      "target_capture_kit_vendor",
+      "target_capture_kit_catalog_number",
+      "target_capture_kit_version",
+      "target_capture_kit_target_region",
+      "size_selection_range",
+      "adapter_name",
+      "adapter_sequence",
+      "to_trim_adapter_sequence",
+      "library_strand",
+      "base_caller_name",
+      "base_caller_version",
+      "is_paired_end",
+      "read_length",
+      "read_group_name",
+      "barcoding_applied",
+      "aliquots"
+    ]
+  },
+  {
+    "node_id": "sample",
+    "title": "Sample",
+    "category": "biospecimen",
+    "total_fields": 26,
+    "required_fields": [
+      "cases"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "biospecimen_anatomic_site",
+      "composition",
+      "current_weight",
+      "days_to_collection",
+      "days_to_sample_procurement",
+      "diagnosis_pathologically_confirmed",
+      "freezing_method",
+      "initial_weight",
+      "intermediate_dimension",
+      "is_ffpe",
+      "longest_dimension",
+      "method_of_sample_procurement",
+      "oct_embedded",
+      "preservation_method",
+      "sample_type",
+      "sample_type_id",
+      "sample_volume",
+      "shortest_dimension",
+      "time_between_clamping_and_freezing",
+      "time_between_excision_and_freezing",
+      "tissue_type",
+      "tumor_code",
+      "tumor_code_id",
+      "tumor_descriptor",
+      "cases",
+      "diagnoses"
+    ]
+  },
+  {
+    "node_id": "slide",
+    "title": "Slide",
+    "category": "biospecimen",
+    "total_fields": 23,
+    "required_fields": [
+      "samples"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "apoptotic_concentration",
+      "ctc_concentration",
+      "ctc_low_concentration",
+      "ctc_small_concentration",
+      "section_location",
+      "methanol_added",
+      "number_proliferating_cells",
+      "number_nucleated_cells",
+      "percent_tumor_cells",
+      "percent_tumor_nuclei",
+      "percent_normal_cells",
+      "percent_necrosis",
+      "percent_stromal_cells",
+      "percent_inflam_infiltration",
+      "percent_lymphocyte_infiltration",
+      "percent_monocyte_infiltration",
+      "percent_granulocyte_infiltration",
+      "percent_neutrophil_infiltration",
+      "percent_eosinophil_infiltration",
+      "run_datetime",
+      "run_name",
+      "slide_identifier",
+      "samples"
+    ]
+  },
+  {
+    "node_id": "clinical_test",
+    "title": "Clinical Test",
+    "category": "clinical",
+    "total_fields": 21,
+    "required_fields": [
+      "biomarker_result",
+      "cases",
+      "biomarker_name",
+      "biomarker_test_method"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "biomarker_name",
+      "biomarker_result",
+      "biomarker_test_method",
+      "cea_level_preoperative",
+      "dlco_ref_predictive_percent",
+      "estrogen_receptor_percent_positive_ihc",
+      "estrogen_receptor_result_ihc",
+      "fev1_ref_post_bronch_percent",
+      "fev1_ref_pre_bronch_percent",
+      "fev1_fvc_post_bronch_percent",
+      "fev1_fvc_pre_bronch_percent",
+      "her2_erbb2_percent_positive_ihc",
+      "her2_erbb2_result_fish",
+      "her2_erbb2_result_ihc",
+      "ldh_level_at_diagnosis",
+      "ldh_normal_range_upper",
+      "microsatellite_instability_abnormal",
+      "progesterone_receptor_percent_positive_ihc",
+      "progesterone_receptor_result_ihc",
+      "cases",
+      "diagnoses"
+    ]
+  },
+  {
+    "node_id": "demographic",
+    "title": "Demographic",
+    "category": "clinical",
+    "total_fields": 6,
+    "required_fields": [
+      "cases"
+    ],
+    "preferred_fields": [
+      "year_of_death"
+    ],
+    "all_fields": [
+      "gender",
+      "race",
+      "ethnicity",
+      "year_of_birth",
+      "year_of_death",
+      "cases"
+    ]
+  },
+  {
+    "node_id": "diagnosis",
+    "title": "Diagnosis",
+    "category": "clinical",
+    "total_fields": 53,
+    "required_fields": [
+      "tumor_grade",
+      "days_to_last_known_disease_status",
+      "progression_or_recurrence",
+      "vital_status",
+      "primary_diagnosis",
+      "days_to_recurrence",
+      "morphology",
+      "last_known_disease_status",
+      "tumor_stage",
+      "age_at_diagnosis",
+      "tissue_or_organ_of_origin",
+      "site_of_resection_or_biopsy",
+      "classification_of_tumor",
+      "days_to_last_follow_up"
+    ],
+    "preferred_fields": [
+      "days_to_birth",
+      "site_of_resection_or_biopsy"
+    ],
+    "all_fields": [
+      "age_at_diagnosis",
+      "ajcc_clinical_m",
+      "ajcc_clinical_n",
+      "ajcc_clinical_stage",
+      "ajcc_clinical_t",
+      "ajcc_pathologic_m",
+      "ajcc_pathologic_n",
+      "ajcc_pathologic_stage",
+      "ajcc_pathologic_t",
+      "ann_arbor_b_symptoms",
+      "ann_arbor_clinical_stage",
+      "ann_arbor_extranodal_involvement",
+      "ann_arbor_pathologic_stage",
+      "burkitt_lymphoma_clinical_variant",
+      "cause_of_death",
+      "circumferential_resection_margin",
+      "classification_of_tumor",
+      "colon_polyps_history",
+      "days_to_birth",
+      "days_to_death",
+      "days_to_hiv_diagnosis",
+      "days_to_last_follow_up",
+      "days_to_last_known_disease_status",
+      "days_to_new_event",
+      "days_to_recurrence",
+      "figo_stage",
+      "hiv_positive",
+      "hpv_positive_type",
+      "hpv_status",
+      "last_known_disease_status",
+      "laterality",
+      "ldh_level_at_diagnosis",
+      "ldh_normal_range_upper",
+      "lymph_nodes_positive",
+      "lymphatic_invasion_present",
+      "method_of_diagnosis",
+      "morphology",
+      "new_event_anatomic_site",
+      "new_event_type",
+      "perineural_invasion_present",
+      "primary_diagnosis",
+      "prior_malignancy",
+      "prior_treatment",
+      "progression_or_recurrence",
+      "residual_disease",
+      "site_of_resection_or_biopsy",
+      "tissue_or_organ_of_origin",
+      "tumor_grade",
+      "tumor_stage",
+      "vascular_invasion_present",
+      "vital_status",
+      "year_of_diagnosis",
+      "cases"
+    ]
+  },
+  {
+    "node_id": "exposure",
+    "title": "Exposure",
+    "category": "clinical",
+    "total_fields": 12,
+    "required_fields": [],
+    "preferred_fields": [
+      "cigarettes_per_day",
+      "years_smoked"
+    ],
+    "all_fields": [
+      "alcohol_history",
+      "alcohol_intensity",
+      "bmi",
+      "cigarettes_per_day",
+      "height",
+      "pack_years_smoked",
+      "tobacco_smoking_onset_year",
+      "tobacco_smoking_quit_year",
+      "tobacco_smoking_status",
+      "weight",
+      "years_smoked",
+      "cases"
+    ]
+  },
+  {
+    "node_id": "family_history",
+    "title": "Family History",
+    "category": "clinical",
+    "total_fields": 6,
+    "required_fields": [],
+    "preferred_fields": [],
+    "all_fields": [
+      "relative_with_cancer_history",
+      "relationship_type",
+      "relationship_gender",
+      "relationship_age_at_diagnosis",
+      "relationship_primary_diagnosis",
+      "cases"
+    ]
+  },
+  {
+    "node_id": "treatment",
+    "title": "Treatment",
+    "category": "clinical",
+    "total_fields": 10,
+    "required_fields": [],
+    "preferred_fields": [],
+    "all_fields": [
+      "days_to_treatment",
+      "days_to_treatment_end",
+      "days_to_treatment_start",
+      "therapeutic_agents",
+      "treatment_anatomic_site",
+      "treatment_intent_type",
+      "treatment_or_therapy",
+      "treatment_outcome",
+      "treatment_type",
+      "diagnoses"
+    ]
+  },
+  {
+    "node_id": "slide_image",
+    "title": "Slide Image",
+    "category": "data_file",
+    "total_fields": 14,
+    "required_fields": [
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "experimental_strategy",
+      "cell_type",
+      "cell_identifier",
+      "cell_count",
+      "frame_identifier",
+      "panel_used",
+      "protocol_used",
+      "run_name",
+      "slides",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "submitted_aligned_reads",
+    "title": "Submitted Aligned Reads",
+    "category": "data_file",
+    "total_fields": 7,
+    "required_fields": [
+      "experimental_strategy",
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "experimental_strategy",
+      "read_groups",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "submitted_copy_number",
+    "title": "Submitted Copy Number",
+    "category": "data_file",
+    "total_fields": 8,
+    "required_fields": [
+      "experimental_strategy",
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "experimental_strategy",
+      "aliquots",
+      "read_groups",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "submitted_methylation",
+    "title": "Submitted Methylation",
+    "category": "data_file",
+    "total_fields": 9,
+    "required_fields": [
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "assay_method",
+      "assay_instrument",
+      "assay_instrument_model",
+      "aliquots",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "submitted_somatic_mutation",
+    "title": "Submitted Somatic Mutation",
+    "category": "data_file",
+    "total_fields": 8,
+    "required_fields": [
+      "experimental_strategy",
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "experimental_strategy",
+      "total_variants",
+      "read_groups",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "submitted_unaligned_reads",
+    "title": "Submitted Unaligned Reads",
+    "category": "data_file",
+    "total_fields": 7,
+    "required_fields": [
+      "experimental_strategy",
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "experimental_strategy",
+      "read_groups",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "aligned_reads_index",
+    "title": "Aligned Reads Index",
+    "category": "index_file",
+    "total_fields": 6,
+    "required_fields": [
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "submitted_aligned_reads_files",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "experimental_metadata",
+    "title": "Experimental Metadata",
+    "category": "metadata_file",
+    "total_fields": 6,
+    "required_fields": [
+      "file_size",
+      "md5sum",
+      "data_category",
+      "file_name",
+      "data_format",
+      "data_type"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "data_category",
+      "data_type",
+      "data_format",
+      "experiments",
+      "core_metadata_collections"
+    ]
+  },
+  {
+    "node_id": "read_group_qc",
+    "title": "Read Group QC",
+    "category": "notation",
+    "total_fields": 23,
+    "required_fields": [
+      "sequence_length_distribution",
+      "per_sequence_quality_score",
+      "workflow_link",
+      "per_base_sequence_quality",
+      "sequence_duplication_levels",
+      "per_tile_sequence_quality",
+      "adapter_content",
+      "basic_statistics",
+      "total_sequences",
+      "percent_gc_content",
+      "per_sequence_gc_content",
+      "overrepresented_sequences",
+      "per_base_n_content",
+      "read_groups",
+      "per_base_sequence_content",
+      "encoding",
+      "kmer_content"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "$ref",
+      "workflow_type",
+      "fastq_name",
+      "percent_aligned",
+      "percent_gc_content",
+      "encoding",
+      "total_aligned_reads",
+      "total_sequences",
+      "basic_statistics",
+      "per_base_sequence_quality",
+      "per_tile_sequence_quality",
+      "per_sequence_quality_score",
+      "per_base_sequence_content",
+      "per_sequence_gc_content",
+      "per_base_n_content",
+      "sequence_length_distribution",
+      "sequence_duplication_levels",
+      "overrepresented_sequences",
+      "adapter_content",
+      "kmer_content",
+      "submitted_aligned_reads_files",
+      "submitted_unaligned_reads_files",
+      "read_groups"
+    ]
+  },
+  {
+    "node_id": "slide_count",
+    "title": "Slide Count",
+    "category": "notation",
+    "total_fields": 13,
+    "required_fields": [
+      "slides"
+    ],
+    "preferred_fields": [],
+    "all_fields": [
+      "cell_type",
+      "cell_identifier",
+      "cell_count",
+      "ck_signal",
+      "biomarker_signal",
+      "er_localization",
+      "frame_identifier",
+      "relative_nuclear_size",
+      "relative_nuclear_intensity",
+      "relative_cytokeratin_intensity",
+      "relative_er_intensity",
+      "run_name",
+      "slides"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+# introspection_query.graphql
+# ----------------------------
+# This query is sent to any Gen3/Peregrine GraphQL endpoint to automatically
+# discover all node types and their fields — no hardcoding needed.
+#
+# In the final tool this runs at startup, driven by heatmap.config.json.
+# The response feeds directly into the density calculator.
+#
+# Usage in the app:
+#   const result = await apolloClient.query({ query: INTROSPECT_SCHEMA });
+#   const types = result.data.__schema.types.filter(t => t.kind === 'OBJECT');
+
+query IntrospectSchema {
+  __schema {
+    types {
+      name
+      kind
+      description
+      fields {
+        name
+        description
+        type {
+          name
+          kind
+          ofType {
+            name
+            kind
+          }
+        }
+      }
+    }
+  }
+}

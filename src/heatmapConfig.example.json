@@ -1,0 +1,13 @@
+{
+  "endpoint": "https://pcdc.example.org/graphql",
+  "authToken": "Bearer <your-token-here>",
+  "excludeNodeTypes": ["program", "project"],
+  "excludeFields": ["id", "type", "state", "submitter_id"],
+  "colourThresholds": {
+    "low": 33,
+    "mid": 66
+  },
+  "pageSize": 20,
+  "cacheTTLSeconds": 300,
+  "title": "PCDC Data Density"
+}
